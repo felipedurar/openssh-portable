@@ -12,6 +12,7 @@
 #define STDIN_FILENO 0
 #define STDOUT_FILENO 1
 #define STDERR_FILENO 2
+#define _CRT_INTERNAL_NONSTDC_NAMES 0
 
 int w32_ftruncate(int, off_t);
 #define ftruncate(a, b) w32_ftruncate((a), (b))

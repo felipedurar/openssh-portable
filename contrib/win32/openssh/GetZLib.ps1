@@ -35,7 +35,8 @@ Write-Host "destDir:$destDir"
 Write-Host "override:$override"
 
 $zip_path = Join-Path $PSScriptRoot "ZLib.zip"
-$release_url = "https://github.com/PowerShell/zlib/releases/download/$version/zlib.zip"
+#$release_url = "https://github.com/PowerShell/zlib/releases/download/$version/zlib.zip"
+$release_url = "https://github.com/PowerShell/ZLib/releases/download/V1.2.11/ZLib.zip"
 Write-Host "release_url:$release_url"
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor `
